@@ -5,3 +5,6 @@
 dist
 dist-ssr
 *.local
+
+# compiler
+.parcel-cache
