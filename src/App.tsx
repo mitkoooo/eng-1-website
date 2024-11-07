@@ -1,5 +1,5 @@
-import MarkDown from "./Markdown/MarkDown.mdx";
-import PlantUmlDiagram from "./PlantUmlDiagram";
+import MarkDown from "./markdown/MarkDown.mdx";
+import PlantUmlDiagram from "./components/PlantUmlDiagram";
 
 const App = (): React.JSX.Element => {
   return (
