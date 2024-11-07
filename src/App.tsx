@@ -162,14 +162,17 @@ EndScreen ..|> Screen : implements
 MainScreen ..|> Screen : implements
 LoadingScreen ..|> Screen : implements
 MenuScreen ..|> Screen : implements
+PreferencesScreen ..|> Screen : implements
 Main ..|> Game : extends
 Building *-- MainScreen : uses buildingGrid
-LoadingScreen *-- Main
-PreferencesScreen *-- Main
-MenuScreen *-- Main
-EndScreen *-- Main
-MainScreen *-- Main 
-AppPreferences *-- Main
+
+Main o-- LoadingScreen
+Main o-- PreferencesScreen
+Main o-- MenuScreen
+Main o-- EndScreen
+Main o--  MainScreen 
+Main *-- AppPreferences 
+
 @enduml"
         title="Final Entity diagram"
       />
