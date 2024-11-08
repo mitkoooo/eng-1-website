@@ -1,11 +1,11 @@
-import MarkDown from "./markdown/MarkDown.mdx";
+import Markdown from "./components/Markdown.mdx";
 import PlantUmlDiagram from "./components/PlantUmlDiagram";
 
 const App = (): React.JSX.Element => {
   return (
     <div>
       <div className="mb-3">
-        <MarkDown />
+        <Markdown />
       </div>
       <h1 className="text-center text-black mt-6 mb-3">
         Interim versions of the game architecture
