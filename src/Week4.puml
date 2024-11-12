@@ -1,0 +1,37 @@
+@startgantt
+Project starts 2024-09-26
+
+[Requirements] as [RE] happens on 2024-10-03 and is colored in hotpink
+[Formulate questions for meet] happens on 2024-10-03 and is colored in hotpink
+then [Requirements Elicitation] happens 2024-10-10 and is colored in hotpink
+then [Requirements Report] on {James, Laina, Mansi} starts 2024-10-14 and is colored in hotpink
+[Requirements Report] ends on 2024-10-20
+[RE] ends on 2024-10-20
+
+[Risk Assessment and Mitigation Report] as [RI] happens at 2024-10-07 and is colored in greenyellow
+[Draft risk management process] on {Almira, James} starts on 2024-10-14 and ends at 2024-10-20 and is colored in greenyellow
+[Create risk register] on {Almira, Mansi} starts at 2024-10-14 and ends at 2024-10-17 and is colored in greenyellow
+[RI] ends at [Draft risk management process]'s end
+
+[Method Selection and Planning] as [P] happens at 2024-10-17 and is colored in orange
+[Method Selection write-up] on {Harry,Almira} starts at 2024-10-17 and ends at 2024-10-20 and is colored in orange
+then [Planning write-up] lasts 5 days and is colored in orange
+[P] ends at [Planning write-up]'s end
+
+[Implementation] as [I] happens at 2024-10-14 and is colored in deepskyblue/dodgerblue
+[Work on start screen] on {James} starts at [I]'s start and ends at 2024-10-17 and is colored in deepskyblue/dodgerblue
+[Add Stretch Viewport] on {Harry} starts at [I]'s start and ends at 2024-10-17 and  is colored in deepskyblue/dodgerblue
+then [Add ability to build] lasts 7 days and is colored in deepskyblue/dodgerblue
+then [Reiteration of Architecture] lasts 7 days and is colored in yellow
+
+[Architecture] as [A] happens on 2024-10-20 and is colored in yellow
+[Initial Architecture write-up] on {Vadim} starts 2024-10-20 and ends 2024-10-25 and is colored in yellow
+[A] ends at [Reiteration of Architecture]'s end
+
+[Website] as [W] happens at 2024-10-03 and is colored in darkturquoise
+then [Develop website] on {Vadim} starts on 2024-10-03 and ends on 2024-10-10 and is colored in darkturquoise
+then [Link deliverables on website] on {Vadim} starts on 2024-10-17 and is colored in darkturquoise
+
+
+@endgantt
+
