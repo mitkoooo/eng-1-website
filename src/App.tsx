@@ -6,47 +6,10 @@ import React from "react";
 const App = (): React.JSX.Element => {
   return (
       <div>
-          <h1 className="text-center text-black mt-6 mb-3">Week 3 - Gantt chart</h1>
+          <h1 className="text-center text-black mt-6 mb-3">Gantt chart</h1>
           <PlantUmlDiagram
               plantUmlCode="
-      @startgantt
-      Project starts 2024-09-26
-
-      [Requirements] as [RE] happens on 2024-10-03 and is colored in hotpink
-      [Formulate questions for meet] happens on 2024-10-03 and is colored in hotpink
-      then [Requirements Elicitation] happens 2024-10-10 and is colored in hotpink
-      then [Requirements Report] on {James, Laina, Mansi} starts 2024-10-14 and is colored in hotpink
-      [Requirements Report] ends on 2024-10-20
-      [RE] ends at [Requirements Report]'s end
-
-      [Risk Assessment and Mitigation Report] as [RI] happens at 2024-10-07 and is colored in greenyellow
-      [Draft risk management process] on {Almira, James} starts on 2024-10-07 and ends at 2024-10-20 and is colored in greenyellow
-      [Create risk register] on {Almira, Mansi} starts at 2024-10-14 and ends at 2024-10-17 and is colored in greenyellow
-      [RI] ends at [Draft risk management process]'s end
-
-      [Method Selection and Planning] as [P] happens 2024-10-14 and is colored in orange
-      [Method Selection write-up] starts at 2024-10-14 and ends at 2024-10-21 and is colored in orange
-      [Planning write-up] starts at 2024-10-14 and ends at 2024-10-28 and is colored in orange
-      [Post weekly updates] on {Mansi} starts at [Planning write-up]'s start and requires 5 days and is colored in darkturquoise
-      [P] ends at [Planning write-up]'s end
-
-      [Implementation] happens at 2024-10-14 and is colored in deepskyblue/dodgerblue
-      then [Architecture] as [A] is colored in yellow
-      then [Initial Architecture] starts at [A]'s start and is colored in yellow
-
-      [Website] as [W] happens 2024-10-03 and is colored in darkturquoise
-      [Develop website] on {Vadim} starts on 2024-10-10 and is colored in darkturquoise
-      then [Add hyperlinks] on {Vadim} starts on 2024-10-14 and requires 1 day and is colored in darkturquoise
-      [W] ends at [Post weekly updates]'s end
-
-      @endgantt
-      "
-              title="Gantt chart"
-            />
-
-      <h1 className="text-center text-black mt-6 mb-3">Gantt chart</h1>
-      <PlantUmlDiagram
-        plantUmlCode="@startgantt
+@startgantt
 Project starts 2024-09-26
 
 [Requirements] as [RE] starts on 2024-10-03 and is colored in hotpink
@@ -87,21 +50,20 @@ then [Add architecture to the website] on {Vadim} starts on 2024-11-07 and is co
 [Develop website] on {Vadim} starts on 2024-10-03 and ends on 2024-10-10 and is colored in darkturquoise
 then [Link deliverables on website] on {Vadim} starts on 2024-10-17 and is colored in darkturquoise
 [Incorporate final weekly updates on website] on {Mansi} starts on 2024-10-24 and ends on 2024-11-07 and is colored in darkturquoise
-[W] ends 2024-11-07 
-
+[W] ends 2024-11-07
 
 @endgantt
 "
-        title="Gantt chart"
-      />
-      <div className="mb-3">
-        <Markdown />
-      </div>
-      <h1 className="text-center text-black mt-6 mb-3">
-        Interim versions of the game architecture
-      </h1>
-      <PlantUmlDiagram
-        plantUmlCode="@startuml
+              title="Gantt chart"
+          />
+          <div className="mb-3">
+              <Markdown/>
+          </div>
+          <h1 className="text-center text-black mt-6 mb-3">
+              Interim versions of the game architecture
+          </h1>
+          <PlantUmlDiagram
+              plantUmlCode="@startuml
 package EntitySystems #DDDDDD {
  class BuildingSatisfactionCalculator
  class BuildingRenderer
@@ -177,13 +139,13 @@ TimeManager --> Timer
 EventDispatcher --> Event
 }
 @enduml"
-        title="Entity Diagram"
-      />
-      <p className="text-center text-black text-opacity-50 italic">
-        Initial Entity diagram (Week 5)
-      </p>
-      <PlantUmlDiagram
-        plantUmlCode="@startuml
+              title="Entity Diagram"
+          />
+          <p className="text-center text-black text-opacity-50 italic">
+              Initial Entity diagram (Week 5)
+          </p>
+          <PlantUmlDiagram
+              plantUmlCode="@startuml
 package Entities {
 
 
@@ -264,12 +226,178 @@ Main o--  MainScreen
 Main *-- AppPreferences 
 
 @enduml"
-        title="Final Entity diagram"
-      />
-      <p className="text-center text-black text-opacity-50 italic">
-        Final Assessment 1 Entity diagram (Week 6)
-      </p>
-    </div>
+              title="Final Entity diagram"
+          />
+          <p className="text-center text-black text-opacity-50 italic">
+              Final Assessment 1 Entity diagram (Week 6)
+          </p>
+
+          <h1 className="text-center text-black mt-6 mb-3">Week 3 - Gantt chart</h1>
+          <PlantUmlDiagram
+              plantUmlCode="
+@startgantt
+Project starts 2024-09-26
+
+[Requirements] as [RE] happens on 2024-10-03 and is colored in hotpink
+[Formulate questions for meet] happens on 2024-10-03 and is colored in hotpink
+then [Requirements Elicitation] happens 2024-10-10 and is colored in hotpink
+then [Requirements Report] on {James, Laina, Mansi} starts 2024-10-14 and is colored in hotpink
+[Requirements Report] ends on 2024-10-20
+[RE] ends at [Requirements Report]'s end
+
+[Risk Assessment and Mitigation Report] as [RI] happens at 2024-10-07 and is colored in greenyellow
+[Draft risk management process] on {Almira, James} starts on 2024-10-07 and ends at 2024-10-20 and is colored in greenyellow
+[Create risk register] on {Almira, Mansi} starts at 2024-10-14 and ends at 2024-10-17 and is colored in greenyellow
+[RI] ends at [Draft risk management process]'s end
+
+[Method Selection and Planning] as [P] happens 2024-10-14 and is colored in orange
+[Method Selection write-up] starts at 2024-10-14 and ends at 2024-10-21 and is colored in orange
+[Planning write-up] starts at 2024-10-14 and ends at 2024-10-28 and is colored in orange
+[Post weekly updates] on {Mansi} starts at [Planning write-up]'s start and requires 5 days and is colored in darkturquoise
+[P] ends at [Planning write-up]'s end
+
+[Implementation] happens at 2024-10-14 and is colored in deepskyblue/dodgerblue
+then [Architecture] as [A] is colored in yellow
+then [Initial Architecture] starts at [A]'s start and is colored in yellow
+
+[Website] as [W] happens 2024-10-03 and is colored in darkturquoise
+[Develop website] on {Vadim} starts on 2024-10-10 and is colored in darkturquoise
+then [Add hyperlinks] on {Vadim} starts on 2024-10-14 and requires 1 day and is colored in darkturquoise
+[W] ends at [Post weekly updates]'s end
+
+@endgantt
+"
+              title="Gantt chart"
+          />
+
+
+          <h1 className="text-center text-black mt-6 mb-3">Week 4 - Gantt chart</h1>
+          <PlantUmlDiagram
+              plantUmlCode="
+@startgantt
+Project starts 2024-09-26
+
+[Requirements] as [RE] happens on 2024-10-03 and is colored in hotpink
+[Formulate questions for meet] happens on 2024-10-03 and is colored in hotpink
+then [Requirements Elicitation] happens 2024-10-10 and is colored in hotpink
+then [Requirements Report] on {James, Laina, Mansi} starts 2024-10-14 and is colored in hotpink
+[Requirements Report] ends on 2024-10-20
+[RE] ends at [Requirements Report]'s end
+
+[Risk Assessment and Mitigation Report] as [RI] happens at 2024-10-07 and is colored in greenyellow
+[Draft risk management process] on {Almira, James} starts on 2024-10-07 and ends at 2024-10-20 and is colored in greenyellow
+[Create risk register] on {Almira, Mansi} starts at 2024-10-14 and ends at 2024-10-17 and is colored in greenyellow
+[RI] ends at [Draft risk management process]'s end
+
+
+[Implementation] happens at 2024-10-14 and is colored in deepskyblue/dodgerblue
+then [Architecture] as [A] is colored in yellow
+then [Initial Architecture] starts at [A]'s start and is colored in yellow
+
+[Website] as [W] happens 2024-10-03 and is colored in darkturquoise
+[Develop website] on {Vadim} starts on 2024-10-10 and is colored in darkturquoise
+then [Add hyperlinks] on {Vadim} starts on 2024-10-14 and requires 1 day and is colored in darkturquoise
+
+@endgantt"
+              title="Gantt chart"
+          />
+          <h1 className="text-center text-black mt-6 mb-3">Week 5 - Gantt chart</h1>
+          <PlantUmlDiagram
+              plantUmlCode="
+@startgantt
+Project starts 2024-09-26
+
+[Requirements] as [RE] happens on 2024-10-03 and is colored in hotpink
+[Formulate questions for meet] happens on 2024-10-03 and is colored in hotpink
+then [Requirements Elicitation] happens 2024-10-10 and is colored in hotpink
+then [Requirements Report] on {James, Laina, Mansi} starts 2024-10-14 and is colored in hotpink
+[Requirements Report] ends on 2024-10-25
+[RE] ends at [Requirements Report]'s end
+
+[Risk Assessment and Mitigation Report] as [RI] happens at 2024-10-07 and is colored in greenyellow
+[Draft risk management process] on {Almira, James} starts on 2024-10-14 and ends at 2024-10-21 and is colored in greenyellow
+[Create risk register] on {Almira, Mansi} starts at 2024-10-14 and ends at 2024-10-17 and is colored in greenyellow
+[RI] ends at [Draft risk management process]'s end
+
+[Method Selection and Planning] as [P] happens 2024-10-17 and is colored in orange
+[Method Selection write-up] on {Harry,Almira} starts at 2024-10-17 and ends at 2024-10-20 and is colored in orange
+[Planning write-up] on {Mansi} starts at 2024-10-21 and ends at 2024-11-04 and is colored in orange
+[P] ends at [Planning write-up]'s end
+
+[Implementation] happens at 2024-10-14 and is colored in deepskyblue/dodgerblue
+then [Add Stretch Viewport] on {Harry} starts at 2024-10-15 and ends at  2024-10-25 and is colored in deepskyblue/dodgerblue
+[Work on start screen] on {James} starts at [Implementation]'s start and ends at 2024-10-17 and is colored in deepskyblue/dodgerblue
+then [Update map and add textures] on {Harry} starts at 2024-10-24 and is colored in deepskyblue/dodgerblue
+then [Add ability to build] on {Harry} starts at 2024-10-25 and ends at 2024-11-04 and is colored in deepskyblue/dodgerblue
+then [Work on UI (Timer, Building Counter, End Screen] on {James} starts at 2024-11-04 and lasts 3 day and is colored in deepskyblue/dodgerblue
+then [Work on bugs/add remaining requirements] ends at 2024-11-09 and is colored in deepskyblue
+[Implementation] ends at [Work on bugs/add remaining requirements]'s end
+
+[Architecture] as [A] happens at 2024-10-20 and is colored in yellow
+[Initial Architecture write-up] on {Vadim} starts 2024-10-20 and ends 2024-10-25 and is colored in yellow
+[Reiteration of architecture] on {Vadim} starts at [Add ability to build]'s end and ends 2024-11-07 and is colored in yellow
+then [Add architecture to the website] on {Vadim} starts on 2024-11-07 and is colored in darkturquoise
+[A] ends at [Reiteration of architecture]'s end
+
+[Website] as [W] happens at 2024-10-03 and is colored in darkturquoise
+[Develop website] on {Vadim} starts on 2024-10-03 and ends on 2024-10-10 and is colored in darkturquoise
+then [Link deliverables on website] on {Vadim} starts on 2024-10-17 and is colored in darkturquoise
+[W] ends at [Add architecture to the website]'s end
+
+
+@endgantt
+"
+              title="Gantt chart"
+          />
+          <h1 className="text-center text-black mt-6 mb-3">Week 6 - Gantt chart</h1>
+          <PlantUmlDiagram
+              plantUmlCode="
+
+@startgantt
+Project starts 2024-09-26
+
+[Requirements] as [RE] happens on 2024-10-03 and is colored in hotpink
+[Formulate questions for meet] happens on 2024-10-03 and is colored in hotpink
+then [Requirements Elicitation] happens 2024-10-10 and is colored in hotpink
+then [Requirements Report] on {James, Laina, Mansi} starts 2024-10-14 and is colored in hotpink
+[Requirements Report] ends on 2024-10-25
+[RE] ends at [Requirements Report]'s end
+
+[Risk Assessment and Mitigation Report] as [RI] starts 2024-10-07 and is colored in greenyellow
+[Draft risk management process] on {Almira, James} starts on 2024-10-14 and ends at 2024-10-24 and is colored in greenyellow
+[Create risk register] on {Almira, Mansi} starts at 2024-10-14 and ends at 2024-10-17 and is colored in greenyellow
+[RI] ends at [Draft risk management process]'s end
+
+[Method Selection and Planning] as [P] starts 2024-10-17 and is colored in orange
+[Method Selection write-up] on {Harry,Almira} starts at 2024-10-17 and ends at 2024-10-20 and is colored in orange
+[Planning write-up] on {Mansi} starts at 2024-10-24 and ends at 2024-11-06 and is colored in orange
+[P] ends at [Planning write-up]'s end
+
+[Implementation] happens at 2024-10-14 and is colored in deepskyblue/dodgerblue
+[Add Stretch Viewport] on {Harry} starts at 2024-10-15 and is colored in deepskyblue/dodgerblue
+then [Update map and add textures] on {Harry} starts at 2024-10-25 and is colored in deepskyblue/dodgerblue
+then [Add ability to build] on {Harry} starts at 2024-10-25 and ends at 2024-11-04 and is colored in deepskyblue/dodgerblue
+then [Work on UI (Timer, Building Counter, End Screen] on {James} starts at 2024-11-04 and lasts 3 day and is colored in deepskyblue/dodgerblue
+then [Work on bugs/add remaining requirements] ends at 2024-11-09 and is colored in deepskyblue
+[Implementation] ends at [Work on bugs/add remaining requirements]'s end
+
+[Architecture] as [A] happens on 2024-10-20 and is colored in yellow
+[Initial Architecture write-up] on {Vadim} starts 2024-10-20 and ends 2024-10-25 and is colored in yellow
+[Reiteration of architecture] on {Vadim} starts at [Add ability to build]'s end and ends 2024-11-07 and is colored in yellow
+then [Add architecture to the website] on {Vadim} starts on 2024-11-07 and is colored in darkturquoise
+[A] ends at [Reiteration of architecture]'s end
+
+[Website] as [W] happens at 2024-10-03 and is colored in darkturquoise
+[Develop website] on {Vadim} starts on 2024-10-03 and ends on 2024-10-10 and is colored in darkturquoise
+then [Link deliverables on website] on {Vadim} starts on 2024-10-17 and is colored in darkturquoise
+[Incorporate final weekly updates on website] on {Mansi} starts on 2024-10-24 and ends on 2024-11-05 and is colored in darkturquoise
+[W] ends at [Add architecture to the website]'s end
+
+@endgantt
+"
+              title="Gantt chart"
+          />
+      </div>
   );
 };
 
