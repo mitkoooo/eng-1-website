@@ -1,5 +1,6 @@
 import Markdown from "./components/Markdown.mdx";
 import PlantUmlDiagram from "./components/PlantUmlDiagram";
+import React from "react";
 
 
 const App = (): React.JSX.Element => {
@@ -42,10 +43,6 @@ const App = (): React.JSX.Element => {
       "
               title="Gantt chart"
             />
-            <div className="mb-3">
-              <Markdown />
-            </div>
-      <div>
 
       <h1 className="text-center text-black mt-6 mb-3">Gantt chart</h1>
       <PlantUmlDiagram
